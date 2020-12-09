@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+
+body {
+	text-align: center;
+	font-weight: 500;
+	font-size: 1.1em;
+	color: navy;
+}
+
+div #description {
+	font-weight: bold;
+	font-size: 1.3em;
+}
+body::before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	/*Add linear gradient to the background image tomorrow, that way it can be transparent*/
+	background-image: linear-gradient(
+			0deg,
+			rgba(34, 193, 195, 1) 0%,
+			rgba(209, 45, 253, 0.8836029411764706) 80%
+		),
+		url(https://i.pinimg.com/originals/b6/11/32/b61132e071243ef8786381764bef2729.png);
+	background-size: cover;
+	background-repeat: repeat;
+	background-position: center;
+}
+
+form {
+	box-sizing: border-box;
+	border: 10px solid blue;
+	width: 80vw;
+	margin: 0 auto;
+	text-align: left;
+	background-color: rgba(18, 77, 49, 0.37);
+	padding: 10px 30px;
+	color: black;
+}
+
+.form-control {
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+label {
+	display: flex;
+	justify-content: left;
+}
+.button {
+	text-align: center;
+}
+input[type="name"],
+input[type="email"],
+input[type="number"],
+textarea {
+	width: 80%;
+	border: 1px solid #333;
+	box-sizing: border-box;
+}
+
+input:invalid {
+	box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+	box-shadow: none;
+}
+
+input:out-of-range {
+  background-color: rgba(220,20,60, 0.8);
+  border: 2px solid red;
+}
+
+input:out-of-range + label::after {
+  content: 'out of range!';
+}
+
+input:in-range + label::after {
+  content: 'okay.';
+}
+
+fieldset {
+	padding-bottom: 20px;
+}

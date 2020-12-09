@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Video Game Club Survey</title>
+</head>
+
+<body>
+	<div class="title">
+		<h1 id="title">Video Game Club Survey</h1>
+	</div>
+
+	<div>
+		<p id="description">Thank you for taking the time to fill out this survey!</p>
+	</div>
+
+		<form id="survey-form">
+		  <div class="form-control">
+				<label for="name" id="name-label">Name</label>
+					<input type="text" id="name" placeholder="Enter your name" name="name" required>
+			</div>
+
+		<div class="form-control">
+			<label for="email" id="email-label">Email</label>
+					<input type="email" id="email" placeholder="example@something.com" name="email" required>
+			</div>
+
+			<div class="form-control">
+				<label for="age" id="number-label">Age</label>
+					<input type="number" id="number" placeholder="Enter your age" name="age" min="1" max="200">
+			</div>
+			
+				<div class="form-control">
+				<label for="dropdown" id="dropdown">What type of gamer are you?	</label>
+					<select id="dropdown" name="dropdown">
+						<option value="Select an option" placeholder="Select an option below"></option>
+						<option value="Newbie">Newbie</option>
+						<option value="Casual">Casual</option>
+						<option value="Advanced">Advanced</option>
+						<option value="Pro Gamer">Pro Gamer</option>
+				</select>
+			</div>
+			
+			<div class="form-control">
+				<fieldset name="favorite video game">
+					<legend>What's your favorite video game of all time?</legend>
+					<input type="radio" id="super smash bros ultimate" name="favorite video game" value="super smash bros ultimate">Super Smash Bros Ultimate</input>
+					<label for="super smash bros ultimate"></label>
+				
+  				<input type="radio" id="animal crossing: new horizons" name="favorite video game" value="animal crossing: new horizons">Animal Crossing: New Horizons</input>
+					<label for="animal crossing: new horizons"></label>
+			
+			<input type="radio" id="the last of us part II" name="favorite video game" value="the last of us part II">The Last of Us Part II</input>
+					<label for="the last of us part II"></label>
+	
+				<input type="radio" id="red dead redemption 2" name="favorite video game" value="red dead redemption 2">Red Dead Redemption 2</input>
+					<label for="red dead redemption 2"></label>
+					</fieldset>
+
+				
+					<p>What games would you like to play during club? Choose as many as you'd like from the following.</p>
+				
+					<input type="checkbox" id="mario kart 8 deluxe" name="game for club" value="mario kart 8 deluxe">Mario Kart 8 Deluxe</input>
+					<label for="mario kart 8 deluxe"></label>
+
+				<input type="checkbox" id="nba 2k21" name="game for club" value="nba 2k21">NBA 2k21</input>
+					<label for="nba 2k21"></label>
+				
+				<input type="checkbox" id="call of duty: warzone" name="game for club" value="call of duty: warzone">Call of Duty: Warzone</input>
+					<label for="marvel's spider-man: miles morales"></label>
+
+	<input type="checkbox" id="fall guys: ultimate knockout" name="game for club" value="fall guys: ultimate knockout">Fall Guys: Ultimate Knockout</input>
+					<label for="fall guys: ultimate knockout"></label>
+
+		<input type="checkbox" id="genshin impact" name="game for club" value="genshin impact">Genshin Impact</input>
+			<label for="genshin impact"></label>
+					
+			<div class="form-control">What made you interested in joining our club? We'd love to here from you!<br>
+				<textarea rows="6" cols="8" placeholder="Tell us your opinion here!"></textarea><br>
+			</div>
+
+			<div class="button"><button type="submit" id="submit" name="submit">Submit your answer</button></div>
+
+		</form>
+</body>
+
+</html>
